@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{background-color: #d6bdbd78;}
+body,
+ul {
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'PT Serif', serif;
+}
+.doormonk{
+  color: rgb(198, 198, 226);
+  text-decoration: none;
+  line-height: 75px;
+  font-size: 3.2em;
+  text-shadow: -2px 4px 20px #c31c1c;
+}
+ul li{
+  line-height: 75px;
+  margin:  0 20px;
+  text-shadow: -1px 4px 20px #d89a9a;
+}
+nav.navbar {
+  display: flex;
+  justify-content: space-around;
+  height: 75px;
+  background-color: rgb(22, 16, 16);
+}
+li a{
+  text-decoration: none;
+  color: rgb(217, 200, 196);
+  font-size: 1.4em;
+}
+.locationsearchinput{
+  border-radius: 20px;
+  height: 32px;
+  width: 249px;
+  font-size: 1.4em;
+  text-align:center
+}
+/* check one */
+.loginsingup{
+  background: transparent;
+  color:  rgb(217, 200, 196);
+  border: none;
+  font-size: 1.2em;
+  text-shadow: -1px 4px 20px #d89a9a;
+}
+ul.navlist {
+  display: flex;
+}
+section.defult{
+  background:url('./image/back.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 515px;
+  box-shadow: -2px 20px 20px 6px;
+}
+div.newstyle{
+  display: flex;
+  font-size: 2.5em;
+  flex-wrap: nowrap;
+  justify-content: right;
+}
+.Homeservice,.HairMan,.hairgirl{
+  color:#ff001a;
+  border: 2px solid white;
+  background-color: rgb(185, 184, 184,0.2);
+  text-shadow: -2px 4px 20px black;
+  margin: 400px 20px 0 2vw;
+  text-decoration: none;
+
+}
+.bookinyouhand{
+  font-family: 'Tilt Prism', cursive;
+  font-size: 4.5em;
+  position: absolute;
+  word-wrap: unset;
+  left: 5vw;
+  color: #f3e687eb;
+}
+.up{
+  top: 180px;
+
+}
+.down{
+  top: 350px;
+}
+/* animation */
+@keyframes shadowrotation {
+  0% { box-shadow: -20px -19px 15px 20px rgb(224, 155, 155);}
+  10% { box-shadow: 0px -20px 15px 20px rgb(224, 155, 155);}
+  20% { box-shadow: 20px -20px 15px 20px rgb(31, 20, 20);}
+  40% { box-shadow: 20px 0px 15px 20px rgb(224, 155, 155);}
+  60% { box-shadow:20px 20px 15px 20px rgb(224, 155, 155);}
+  70% { box-shadow:1px 20px 15px 20px rgb(224, 155, 155);}
+  100% { box-shadow:-20px 19px 15px 20px rgb(224, 155, 155);}
+}
+ .joindoormonk{
+  margin: 100px 0 100px 30vw;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  height: 800px;
+ 
+  
+}
+.joindoormonk:hover{
+  animation-name: shadowrotation;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-iteration-count: infinite;
+}
+.detailjoin{
+  width: 100%;
+  height: 100%;
+  background-image: url("./image/Designer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  /* line-height: 12vh; */
+}
+
+.detailjoin h1{
+  color: rgb(199, 170, 170);
+  font-size: 3.4em;
+  text-decoration: underline;
+
+}
+.detailjoin p{
+  font-size: 2em;
+  color: aliceblue;
+  line-height: 80px;
+}
+.detailjoin .joinnow{
+  height: 50px;
+  width: 280px;
+  font-size: 2em;
+  position: relative;
+  top: 40%;
+
+}
+div.imgg{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 120px;
+}
+.heading{
+  font-size: 5em;
+  text-align: center;
+  margin-top: 120px;
+
+}
+
+.styleimage{
+  /* border: .1px solid rgb(59, 47, 47) ; */
+  box-shadow: 2px 2px 5px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #d1cce6;
+  color: #5562a1;
+  margin: 20px;
+}
+.styleimage img{
+  height: 250px;
+  margin: 2px;
+}
+.styleimage p{
+  font-size: 1.5em;
+}
+.copyright{
+  text-align: center;
+  background-color: white;
+  font-size: 2em;
+  border: 2px solid black;
+}
+div footer{
+  background-color: black;
+}
+
+/* login */
+div.flotingbox{
+  display: none;
+  position: fixed;
+  top: 30vh;
+  text-align: center;
+  background-color: white;
+  border: 2px solid red;
+  z-index: 4;
+  font-size: 3em;
+  width: 600px;
+  height: 500px;
+}
+.login{
+  font-size: 1.2em;
+}
+div.flotingbox input{
+  height: 42px;
+  width: 201px;
+  font-size: .5em;
+}
+.button button{
+  height: 42px;
+  width: 201px;
+  background-color: #16163c;
+  color: #ff0a0a;
+  margin: 10px;
+}
+#cut{
+  background: red;
+  font-size: 1em;
+  float:right;
+  border: .1px solid red;
+  border-radius: 2px;
+  text-shadow: 2px 2px 5px;
+  box-shadow: 2px 2px 5px;
+}
+.signup{
+  display: none;
+}
+#menu,.labelmenu{
+  display: none;
+}
+/* check  it */
+ul.navlist li :hover{
+  color: white;
+}
+#menu:checked ~ ul.navlist{
+  right: 0%;
+}
+@media (max-width:1023px){
+div.section{
+  font-size: .5em;
+}
+nav.navbar ul.navlist{
+  display: block;
+}
+ul.navlist{
+  position: fixed;
+  top: 75px;
+  right: -100%;
+  transition: .5s;
+  background-color: #c31c1c;
+  width: 88%;
+  height: 100vh;
+  z-index: 3;
+}
+.labelmenu{
+  display: block;
+  line-height: 75px;
+  font-size: 2em;
+  color: rgb(229, 216, 216);
+}
+div.flotingbox input{
+  height: 42px;
+  width: 201px;
+  font-size: .4em;
+}
+div.flotingbox{
+  top: 200px;
+  font-size: 2em;
+  width: 350px;
+  height: 400px;
+}
+.styleimage img{
+  height: 150px;
+  margin: 1px;
+}
+.joindoormonk{
+  height: 350px;
+}
+.detailjoin p{
+  line-height: 30px;
+}
+.detailjoin .joinnow{
+  height: 20px;
+  width: 120px;
+  position: relative;
+  font-size: 2em;
+  top: 10px;
+  left: 4vw 
+}
+.copyright{
+  font-size: 1.2em;
+}
+.detailjoin img{
+  width: 50vw;
+}
+.joindoormonk{
+  margin: 40px;
+  width: 70vw;
+}
+}
